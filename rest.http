@@ -1,6 +1,20 @@
-###get url
-GET http://localhost:8000
+
+###Task get api
+GET http://localhost:8000/api/v1/task
 
 
-###welcome message
-GET http://localhost:8000/api/v1/
+###Task post api
+POST http://localhost:8000/api/v1/task
+Content-Type: application/json
+
+//make sure to have a space between header 
+
+{
+    "task":"watching Tv",
+    "hr":1222
+}
+
+
+###Task delete api
+DELETE  http://localhost:8000/api/v1/task
+
